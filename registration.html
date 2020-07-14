@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+    <title>JS Validation</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="login.html"><h1>Login</h1></a>
+            <a href="registration.html"><h1>Register</h1></a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="title">Register</h1>
+        <form action="login.html" onsubmit="return validate()" >
+            <input type="text" id="username" placeholder="Username" >
+            <small class="error" ></small>
+            <input type="email" placeholder="e-mail" autocomplete='off' id='email'><br>
+            <small class="error" ></small>
+            <input type="number" placeholder="Mobile Number"  autocomplete='off'id='mobile' ><br>
+            <small class="error" ></small>
+            <input type="password" placeholder="Password" autocomplete='off' id='pwd'><br>
+            <small class="error" ></small>
+            <input type="password"  placeholder="Confirm Password" autocomplete='off' id='cpwd' ><br>
+            <small class="error" ></small>
+
+            <input type="checkbox" id="tc"><span class='tandc' >Terms and Conditions &nbsp; & &nbsp; Privacy Policy</sapn><br>
+
+            <small class="errors" ></small><br>
+            <center>
+                <button type="submit" id='register'>Register</button><br>
+            </center>
+        </form>
+        </div>
+    </main>
+    
+<script src="script2.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>JS Validation</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="login.html"><h1>Login</h1></a>
+            <a href="registration.html"><h1>Register</h1></a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+        <form action="success.html" onsubmit="return validate()"; id="form" >
+            <h1 class="title" >Login</h1>
+            <h3 class='lable' >UserName</h3>
+            <input type="text" id="username" autocomplete='off' ><br>
+            <small class='error' ></small>
+            <h3 class="lable" >Password</h3>
+            <input type="text" id="password"><br>
+            <small class="error" ></small>
+            <a href="registration.html"><h5 id="register" style="color: black;" >Register</h5></a>
+            <button id='login' >Login</button>
+            <h5 id='okay' ></h5>
+        </form>
+        </div>
+    </main>
+    
+<script src="script.js"></script>
+</body>
+</html>
